@@ -8,9 +8,6 @@ import nmap
 import twitter
 
 
-dispositivosConhecidos = []
-dispositivosDesconhecidos = []
-
 #Cria conexao com o db 
 con = psycopg2.connect(host='localhost', database='arduino',
 user='gleisongjs', password='jsilva996')
@@ -19,6 +16,9 @@ cur = con.cursor()
 cur.execute('select mac, nome from mac')
 macs = dict(cur.fetchall())
 con.close()
+
+dispositivosConhecidos = []
+dispositivosDesconhecidos = []
 
 #Autenticação do twitter
 api = twitter.Api(consumer_key='ftH2lqxvH6eTdYlQi78wbusnp', 
@@ -40,7 +40,7 @@ for k,v in a['scan'].iteritems():
         endMac = str(v['addresses']['mac'])
         if macs.has_key(endMac):
             dispositivo = macs[endMac]
-            if dispositivo != 'tv' and dispositivo != 'roteador' and dispositivo != 'ipad': #tratando os dispositivos fixos, televisão, roteador
+            if dispositivo != 'TV' and dispositivo != 'Roteador' and dispositivo != 'Ipad': #tratando os dispositivos fixos, televisão, roteador
                 dispositivosConhecidos.append(dispositivo)
                 aux = 1
                 #print dispositivo 

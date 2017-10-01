@@ -1,7 +1,8 @@
 Em 01-10-17
 
-Criando o programa AddDispositivo.py para adicionar os dispositivos desconhecidos no db.
+Criando o programa AdicionaDispositivo.py para adicionar os dispositivos desconhecidos no db.
 
+- instalado modulo psycopg2 - sudo apt-get install python-psycopg2
 - Utilizando a base de dados do script dbmacs.py
 - Criando uma tabela no banco de dados do servidor, com o nome de dispositivo
 - criando colunas id, mac e nome
