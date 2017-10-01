@@ -12,7 +12,7 @@ dispositivosConhecidos = []
 dispositivosDesconhecidos = []
 
 #Cria conexao com o db 
-con = psycopg2.connect(host='localhost', port='5432', database='dispositivo',
+con = psycopg2.connect(host='localhost', database='arduino',
 user='gleisongjs', password='jsilva996')
 cur = con.cursor()
 #extrai a tupla de mac e nome do db e converte em dicionário
