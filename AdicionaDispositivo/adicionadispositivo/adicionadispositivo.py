@@ -8,8 +8,8 @@ con = psycopg2.connect(host='localhost',
 database='arduino',
 user='gleisongjs', password='jsilva996')
 cur = con.cursor()
-sql = 'create table mac (id serial primary key, mac varchar(20), nome varchar(50))'
-cur.execute(sql)
+#sql = 'create table mac (id serial primary key, mac varchar(20), nome varchar(50))'
+#cur.execute(sql)
 macDispositivo = str(raw_input('digite o mac: '))
 nomeDispositivo = str(raw_input('digite o nome: '))
 sql = 'insert into mac(mac, nome) values(%s, %s)'
