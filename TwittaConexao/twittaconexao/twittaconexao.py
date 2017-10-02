@@ -9,7 +9,7 @@ import twitter
 
 
 #Cria conexao com o db 
-con = psycopg2.connect(host='localhost', database='arduino',
+con = psycopg2.connect(host='localhost', database='dispositivo',
 user='gleisongjs', password='jsilva996')
 cur = con.cursor()
 #extrai a tupla de mac e nome do db e converte em dicionário

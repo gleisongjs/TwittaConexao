@@ -5,7 +5,7 @@
 
 import psycopg2
 con = psycopg2.connect(host='localhost',
-database='arduino',
+database='dispositivo',
 user='gleisongjs', password='jsilva996')
 cur = con.cursor()
 #sql = 'create table mac (id serial primary key, mac varchar(20), nome varchar(50))'
