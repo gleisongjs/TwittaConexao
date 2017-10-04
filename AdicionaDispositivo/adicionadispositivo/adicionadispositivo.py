@@ -30,7 +30,7 @@ def adicionar():
     sqlDados = (macDispositivo, nomeDispositivo)
     cur.execute(sql, sqlDados)
     con.commit()
-    print 'Dispositivo adicionado com sucesso\n'
+    print 'Dispositivo adicionado com sucesso!\n'
     opcao()
     
     
