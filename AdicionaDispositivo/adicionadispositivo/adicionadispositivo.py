@@ -30,7 +30,6 @@ def adicionar():
     sqlDados = (macDispositivo, nomeDispositivo)
     cur.execute(sql, sqlDados)
     con.commit()
-    con.close()
     print 'Dispositivo adicionado com sucesso\n'
     opcao()
     
@@ -57,7 +56,6 @@ def editar():
     dados = (macNovo, nomeNovo, idMac)
     cur.execute(sql, dados)
     con.commit()
-    con.close()
     print 'Dados alterados com sucesso\n'
     opcao()
  
@@ -78,7 +76,6 @@ def excluir():
     sql = """delete from mac where id = %s"""
     cur.execute(sql, deleta)
     con.commit()
-    con.close()
     print 'Dados deletados com sucesso\n'
     opcao()
     
@@ -106,6 +103,7 @@ def opcao():
     elif op == 4:
         listar()
     elif op == 5:
+        con.close()
         sys.exit(0)
         
 opcao()
