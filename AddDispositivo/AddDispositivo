@@ -1,0 +1,10 @@
+Criando uma interface Gráfica para adicionar o dispositivo em 281117
+
+- Aprender utilizar interface gráfica com Tkinter
+- instalar o módulo tkinter utilizando pip install python-tk
+- criar subprogramas de aprendizagem (InterfaceGrafica, CrudGrafico)
+	utilizando as instruções contidas em: https://www.devmedia.com.br/tkinter-interfaces-graficas-em-python/33956, 
+realizando as devidas adptações, como por exemplo: estou utilizando o postgresql
+- criar o AddDispositivo utilizando o CrudGrafico como modelo. Nesse programa utiliza-se conceitos de Poo.
+- inserido no github dentro de TwittaConexão
+- Realizado testes e foi verificado que o programa está funcionando normalmente.
