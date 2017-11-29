@@ -68,8 +68,8 @@ class Dispositivo(object):
             
             for linha in c:
                 self.iddispositivo = linha[0]
-                self.nome = linha[1]
-                self.mac = linha[2]               
+                self.mac = linha[1]
+                self.nome = linha[2]
                 
             c.close()   
             return "Busca feita com sucesso!"
