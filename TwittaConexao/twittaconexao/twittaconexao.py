@@ -62,7 +62,7 @@ dispositivosDesconhecidos = ', '.join(dispositivosDesconhecidos)
 
 #Twitando 
 if aux == 1:
-    status = api.PostUpdate('''@GleisonJSilva olhe quem está em casa agora: '''+dispositivosConhecidos)
+    status = api.PostUpdate('''@GleisonJSilva olhe quem utilizou a rede de casa agora: '''+dispositivosConhecidos)
     print status.text
 elif aux==2:
     status = api.PostUpdate('@GleisonJSilva não conhecemos o dispositivo: '+ dispositivosDesconhecidos +' - Ele está utilizando a rede agora.')
