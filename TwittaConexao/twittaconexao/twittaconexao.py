@@ -21,10 +21,10 @@ dispositivosConhecidos = []
 dispositivosDesconhecidos = []
 
 #Autenticação do twitter
-api = twitter.Api(consumer_key='ftH2lqxvH6eTdYlQi78wbusnp', 
-consumer_secret='oLgaI8Ia9HwZ2gPjQItTNIRiQiHkgRsvs4IxNl3gUX00EJ2Kzp',
-access_token_key='832896102366068736-YtZwU7fMsHLuWYPhZLktZug8oTx7ua6',
-access_token_secret='wSNwxnqIeJYoyQZAATOPruT6NcoGizJY8ENrk7JUZ9qId')
+api = twitter.Api(consumer_key='9yVXdpHRetwN643Qux2TE2C14', 
+consumer_secret='sBmujbqdIwnKD8ucd96p3bsam3MguiSThFXbMzzJLgQI4M4rl6',
+access_token_key='832896102366068736-V2zAYhuAA8D6n0GvFjPyqitSZo1jvsX',
+access_token_secret='31ORvOjvpxU3bRYVVAgSG2vt8lxTlNbBYOCESiFeWODiZ')
 
 #Buscando os dispositivos conectados da minha rede
 nm = nmap.PortScanner()
@@ -62,7 +62,7 @@ dispositivosDesconhecidos = ', '.join(dispositivosDesconhecidos)
 
 #Twitando 
 if aux == 1:
-    status = api.PostUpdate('''@GleisonJSilva olhe quem utilizou a rede de casa agora: '''+dispositivosConhecidos)
+    status = api.PostUpdate('''@GleisonJSilva veja quem está em casa agora: '''+dispositivosConhecidos)
     print status.text
 elif aux==2:
     status = api.PostUpdate('@GleisonJSilva não conhecemos o dispositivo: '+ dispositivosDesconhecidos +' - Ele está utilizando a rede agora.')
