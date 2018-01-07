@@ -40,7 +40,7 @@ for k,v in a['scan'].iteritems():
         endMac = str(v['addresses']['mac'])
         if macs.has_key(endMac):
             dispositivo = macs[endMac]
-            #lista de dispositivos conectados constantemente
+            #lista de dispositivos conectados constantemente. ps4, roteador ...
             if dispositivo != 'TV' and dispositivo != 'roteador' and dispositivo != 'Ipad' and dispositivo != 'My PS4': #tratando os dispositivos fixos, televisão, roteador
                 dispositivosConhecidos.append(dispositivo)
                 aux = 1
