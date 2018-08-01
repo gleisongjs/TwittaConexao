@@ -7,6 +7,9 @@ import psycopg2
 import nmap
 import twitter
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 #Cria conexao com o db 
 con = psycopg2.connect(host='localhost', database='dispositivo',
