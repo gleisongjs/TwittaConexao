@@ -11,7 +11,15 @@ Utilizando bibliotecas:
  twitter - pip install python-twitter
 
 
-Configurando o crontab
+Configurando o crontab: Executando a cada 30 segundos
+
+como root: crontab -e
+
+* * * * * python /home/transformers/TwittaConexao/TwittaConexao/twittaconexao/twittaconexao.py
+
+* * * * * sleep 30 && python ./home/transformers/TwittaConexao/TwittaConexao/twittaconexao/twittaconexao.py
+
+
 
 
 
